@@ -1,1 +1,96 @@
 /* Created at 20/11/23 by emilian */
+
+
+* {
+    box-sizing: border-box;
+}
+
+body, input, textarea, select, button {
+    font-family:Inter, Inter Placeholder, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #ffff;
+    text-decoration: none;
+}
+
+html, body, #main {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(0, 12, 36);
+}
+
+.bf-header {
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    height: min-content;
+    justify-content: space-between;
+    overflow: hidden;
+    padding: 50px;
+    height: auto;
+
+    width: 100%;
+    z-index: 10;
+}
+
+.bf-logo {
+    display: flex;
+    align-items: center;
+}
+
+.bf-logo-icon {
+    margin-right: 10px; /* Adjust this value as needed */
+    height: 20px;
+    width: 20px;
+}
+
+.bf-text {
+    color: rgb(255, 255, 255);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0; /* Füge dies hinzu, um den standardmäßigen Absatzabstand zu entfernen */
+}
+
+
+.bf-header-left {
+    display: flex;
+    align-items: center;
+    float: left;
+}
+
+
+.bf-header-right {
+    display: flex;
+    align-items: center;
+}
+
+.bf-mobile-menu {
+    display: flex;
+}
+
+.bf-desktop-menu {
+    /* todo */
+}
+
+/* request screen size */
+@media screen and (max-width: 768px) {
+    .bf-desktop-menu {
+        display: none; /* hide memu on smaller devices */
+    }
+
+    .bf-mobile-menu {
+        display: block; /* show hamburger menu */
+    }
+}
+
+.bf-footer-socialmedia {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+}
+
+.bf-footer-socialmedia-icon {
+    margin-right: 10px; /* space between icons */
+}

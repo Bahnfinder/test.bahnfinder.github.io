@@ -1,0 +1,43 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.bf-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: rgb(0, 12, 36);
+    color: white;
+}
+
+.bf-logo {
+    display: flex;
+    align-items: center;
+}
+
+.bf-logo-icon {
+    margin-right: 10px;
+    height: 20px;
+    width: 20px;
+}
+
+.bf-text {
+    margin: 0;
+}
+
+.bf-header-links ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bf-header-links li {
+    margin-right: 20px;
+}
+
+.bf-header-links a {
+    text-decoration: none;
+    color: white;
+}
